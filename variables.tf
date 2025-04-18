@@ -10,20 +10,20 @@ variable "region" {
 
 variable "prefix" {
   type        = string
-  description = "(Required) Prefix to use for all resources in this module. 
+  description = "(Required) Prefix to use for all resources in this module."
 
 }
 
 variable "cidr_block" {
   type        = string
-  description = "(Required) The CIDR block for the VPC. 
+  description = "(Required) The CIDR block for the VPC."
 
 }
 
 variable "environment" {
   type        = string
   description = "(Required) Environment to use for all resources in this module."
- 
+
 }
 
 variable "billing_code" {
@@ -34,6 +34,6 @@ variable "billing_code" {
 
 variable "public_subnets" {
   type        = map(string)
-  description = "(Required) Map of public subnets to create with CIDR blocks. Key will be used as subnet name with prefix. 
+  description = "(Required) Map of public subnets to create with CIDR blocks. Key will be used as subnet name with prefix."
 }
 
