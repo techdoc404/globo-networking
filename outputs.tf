@@ -9,7 +9,7 @@ output "vpc_id" {
 }
 
 # This output contains the IDs of the public subnets
-output public_subnets {
+output "public_subnets" {
   description = "List of public subnets"
   value       = module.main.public_subnets
 }
